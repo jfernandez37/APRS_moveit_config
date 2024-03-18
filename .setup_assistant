@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: aprs_description
+    relative_path: urdf/aprs_fanuc.urdf.xacro
+  srdf:
+    relative_path: config/aprs_fanuc.srdf
+  package_settings:
+    author_name: Joseph Fernandez
+    author_email: joseph.fernandez@nist.gov
+    generated_timestamp: 1710791466
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
